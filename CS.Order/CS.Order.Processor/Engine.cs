@@ -35,7 +35,8 @@ namespace CS.Processor
 
         public Task StopAsync(CancellationToken cancellationToken)
         {
-            throw new NotImplementedException();
+            engineTask?.Wait();
+            return Task.CompletedTask;
         }
     }
 }

@@ -19,14 +19,11 @@ namespace CS.Processor
         {
             this.fileProcessor = fileProcessor;
             this.orderBasket = orderBasket;
-
-            this.orderBasket.OnOrderReceived += OrderReceivedForProcessing;
-
         }
 
         public Task NotifyAsync(CancellationToken cancellationToken)
         {
-            //throw new NotImplementedException();
+            this.orderBasket.OnOrderReceived += OrderReceivedForProcessing;
             return Task.CompletedTask;
         }
         
