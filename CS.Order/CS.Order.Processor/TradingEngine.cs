@@ -32,7 +32,7 @@ namespace CS.Processor
         
         private void OrderReceivedForProcessing(Order order)
         {
-            logger.Info("Order is received from basket");
+            logger.Info("Order is received from basket | OrderId : " + order.OrderId);
 
             order.ProcessedOn = DateTime.UtcNow;
 

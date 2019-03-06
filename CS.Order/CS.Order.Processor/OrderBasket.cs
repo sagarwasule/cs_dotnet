@@ -14,13 +14,11 @@ namespace CS.Processor
 
         public void OrderPlaced(Order order)
         {
-            logger.Info("Order is pushed to basket");
+            logger.Info("Order is pushed to basket | OrderId : " + order.OrderId);
 
+            logger.Info("Order is published to subscribers | OrderId : " + order.OrderId);
             //Invoke Action
             OnOrderReceived?.Invoke(order);
-
-            logger.Info("Order is published to subscribers");
-
         }
 
     }

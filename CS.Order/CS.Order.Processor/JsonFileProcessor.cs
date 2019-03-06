@@ -37,7 +37,7 @@ namespace CS.Processor
             newJson = JsonConvert.SerializeObject(orders, Formatting.Indented);
             File.WriteAllText(AppDomain.CurrentDomain.BaseDirectory + "OrderBook.json", newJson);
 
-            logger.Info("Order is successfully written to OrderBook file");
+            logger.Info("Order is successfully written to OrderBook file | OrderId : " + order.OrderId);
         }
     }
 }

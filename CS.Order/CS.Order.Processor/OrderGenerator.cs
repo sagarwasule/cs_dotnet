@@ -35,7 +35,7 @@ namespace CS.Processor
             int secondsToGenerateOrder = r.Next(1, 10);
 
             Order ord = CreateOrder();
-            logger.Info("Order is generated");
+            logger.Info("Order is generated | OrderId : " + ord.OrderId);
             this.orderBasket.OrderPlaced(ord);
             timer.Change(secondsToGenerateOrder, Timeout.Infinite);
         }
