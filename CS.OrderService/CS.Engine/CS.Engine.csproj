@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CS.Contracts\CS.Contracts.csproj" />
+    <ProjectReference Include="..\CS.File\CS.FileProcessor.csproj" />
+    <ProjectReference Include="..\CS.Processor\CS.Processor.csproj" />
+  </ItemGroup>
+
+</Project>

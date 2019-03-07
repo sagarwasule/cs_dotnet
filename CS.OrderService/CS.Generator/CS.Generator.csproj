@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CS.Common\CS.Common.csproj" />
+    <ProjectReference Include="..\CS.Contracts\CS.Contracts.csproj" />
+    <ProjectReference Include="..\CS.Engine\CS.Engine.csproj" />
+    <ProjectReference Include="..\CS.Processor\CS.Processor.csproj" />
+  </ItemGroup>
+
+</Project>
